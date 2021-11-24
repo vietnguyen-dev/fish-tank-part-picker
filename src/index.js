@@ -1,14 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import App from './App';
+import Browse from './components/Pages/Browse';
+import New from "./components/Pages/New";
+import TankBuilder from './components/Pages/TankBuilder';
+import CompletedBuilds from './components/Pages/CompletedBuilds';
+import Cart from './components/Pages/Cart';
+
+const root = document.getElementById("root");
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/browse" element={<Browse />} />
+        <Route path="/new" element={<New />} />
+        <Route path="/tank-builder" element={<TankBuilder />} />
+        <Route path="/completed-builds" element={<CompletedBuilds />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  root
 );
 
 // If you want to start measuring performance in your app, pass a function

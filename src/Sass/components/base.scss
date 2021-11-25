@@ -33,10 +33,11 @@ a{
 
 //containers
 .main-container{
-    padding: 2% 7%;
-}
-
-.second-container{
     padding: 1.5% 7%;
 }
 
+//styles that are the same on all pages
+h2{
+    font-weight: 900;
+    font-size: $head-font-size;
+}

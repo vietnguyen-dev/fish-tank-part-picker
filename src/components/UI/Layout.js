@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from '../assets/fish-3-48.png'
 import CartImg from '../assets/cart.png'
 
-const Layout = ({children}) => {
+const Layout = ({children, layoutClass}) => {
     return (
       <>
         <div className="top-head main-container">
@@ -17,7 +17,7 @@ const Layout = ({children}) => {
             </Link>
           </div>
         </div>
-        <nav className="mid-head second-container">
+        <nav className="mid-head main-container">
           <Link to="/new" className="main-nav-link">
             New to Aquascaping?
           </Link>
@@ -31,7 +31,7 @@ const Layout = ({children}) => {
             Completed Builds
           </Link>
         </nav>
-        <main className="main-container">{children}</main>
+        <main className={`main-container ${layoutClass}`}>{children}</main>
       </>
     );
 }

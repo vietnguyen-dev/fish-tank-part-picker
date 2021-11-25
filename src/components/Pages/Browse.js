@@ -1,11 +1,11 @@
-import React from 'react'
+import Layout from '../UI/Layout'
 
 const Browse = () => {
     return (
-        <div>
-            <h1>Browse Items</h1>
-        </div>
-    )
+      <Layout>
+        <h2>Browse Items</h2>
+      </Layout>
+    );
 }
 
 export default Browse

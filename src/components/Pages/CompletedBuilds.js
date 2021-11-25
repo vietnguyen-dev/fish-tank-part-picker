@@ -1,10 +1,10 @@
-import React from 'react'
+import Layout from "../UI/Layout";
 
 const CompletedBuilds = () => {
     return (
-      <div>
-        <h1>Completed Builds</h1>
-      </div>
+      <Layout>
+        <h2>Completed Builds</h2>
+      </Layout>
     );
 }
 

@@ -1,20 +1,38 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Logo from '../assets/fish-3-48.png'
+import CartImg from '../assets/cart.png'
 
 const Layout = ({children}) => {
     return (
-      <div>
-        <div>
-          <Link to="/cart">Cart</Link>
+      <>
+        <div className="top-head main-container">
+          <img src={Logo} alt="logo" />
+          <h1>FT Part Picker</h1>
+          <div className="cart-container">
+            <Link to="/log-in">log in</Link>
+            <h3>|</h3>
+            <Link to="/cart">
+              <img src={CartImg} alt="link to cart" />
+            </Link>
+          </div>
         </div>
-        <nav>
-          <Link to="/browse">Browse Items</Link>
-          <Link to="/tank-builder">Tank Builder</Link>
-          <Link to="/completed-builds">Completed Builds</Link>
-          <Link to="/new">New to Aquascaping</Link>
+        <nav className="mid-head second-container">
+          <Link to="/new" className="main-nav-link">
+            New to Aquascaping?
+          </Link>
+          <Link to="/tank-builder" className="main-nav-link">
+            Tank Builder
+          </Link>
+          <Link to="/browse" className="main-nav-link">
+            Browse Items
+          </Link>
+          <Link to="/completed-builds" className="main-nav-link">
+            Completed Builds
+          </Link>
         </nav>
-        <main>{children}</main>
-      </div>
+        <main className="main-container">{children}</main>
+      </>
     );
 }
 

@@ -1,10 +1,11 @@
 import React from 'react'
+import Layout from '../UI/Layout'
 
 const New = () => {
     return (
-        <div>
-            <h1>New to Aquascaping</h1>
-        </div>
+        <Layout>
+            <h2>New to Aquascaping</h2>
+        </Layout>
     )
 }
 

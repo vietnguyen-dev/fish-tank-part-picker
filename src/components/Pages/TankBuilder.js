@@ -1,11 +1,12 @@
 import React from 'react'
+import Layout from '../UI/Layout'
 
 const TankBuilder = () => {
     return (
-        <div>
-            <h1>Tank Buidlder</h1>
-        </div>
-    )
+      <Layout>
+        <h2>Tank Buidlder</h2>
+      </Layout>
+    );
 }
 
 export default TankBuilder

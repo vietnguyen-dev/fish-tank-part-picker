@@ -1,0 +1,41 @@
+@import 'base';
+
+.top-head{
+    background-color: $primary-color;
+    display: flex;
+    color: $fill;
+    font-size: $head-font-size;
+    font-weight: 700;
+    align-items: center;
+    letter-spacing: $head-letter-space;
+}
+
+.top-head *{
+    margin-right: 1%;
+}
+
+//same as padding for main container
+.cart-container{
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    display: flex;
+}
+
+.cart-container *{
+    margin-right: 15%;
+}
+
+.cart-container a{
+      font-size: $sub-head-font-size;
+}
+
+.mid-head{
+    background-color: $second-color;
+    color: $fill;
+    font-size: 1.5rem;
+}
+
+.main-nav-link{
+    margin-right: 3%;
+}

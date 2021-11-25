@@ -10,6 +10,8 @@ import New from "./components/Pages/New";
 import TankBuilder from './components/Pages/TankBuilder';
 import CompletedBuilds from './components/Pages/CompletedBuilds';
 import Cart from './components/Pages/Cart';
+import LogIn from './components/Pages/LogIn';
+import CreateAccount from './components/Pages/CreateAccount'
 
 const root = document.getElementById("root");
 
@@ -23,6 +25,8 @@ ReactDOM.render(
         <Route path="/tank-builder" element={<TankBuilder />} />
         <Route path="/completed-builds" element={<CompletedBuilds />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/log-in" element={<LogIn />} />
+        <Route path="/create-account" element={<CreateAccount />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

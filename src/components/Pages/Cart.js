@@ -4,7 +4,7 @@ import Layout from '../UI/Layout'
 const Cart = () => {
     return (
       <Layout>
-          <h1>Cart</h1>
+          <h2>Cart</h2>
       </Layout>
     )
 }

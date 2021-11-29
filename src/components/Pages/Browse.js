@@ -1,5 +1,6 @@
 import Layout from '../UI/Layout'
 import ItemList from '../UI/ItemList'
+import ItemFilter from '../UI/ItemFilter'
 
 let items = [
   {
@@ -31,7 +32,7 @@ let items = [
 const Browse = () => {
     return (
       <Layout layoutClass={`items-page`}>
-        <h3>Filters</h3>
+        <ItemFilter />
         <div>
           <h2>Browse Products</h2>
           <ItemList items={items}/>

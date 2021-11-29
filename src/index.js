@@ -4,6 +4,11 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+//redux
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
+//pages available
 import App from './App';
 import Browse from './components/Pages/Browse';
 import New from "./components/Pages/New";
@@ -17,6 +22,7 @@ const root = document.getElementById("root");
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
@@ -29,6 +35,7 @@ ReactDOM.render(
         <Route path="/create-account" element={<CreateAccount />} />
       </Routes>
     </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   root
 );

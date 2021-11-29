@@ -13,6 +13,7 @@ const ItemList = ({items}) => {
         {items.map((item) => (
           <ItemListing
             key={item.id}
+            id={item.id}
             name={item.name}
             price={item.price}
             dimensions={item.dimensions}

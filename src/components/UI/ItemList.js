@@ -3,7 +3,8 @@ import ItemListing from "./ItemListing"
 const ItemList = ({items}) => {
     return (
       <>
-        <ul className='item-description'>
+        <ul className="item-description">
+          <li>Image</li>
           <li>Name</li>
           <li>Price</li>
           <li>Dimensions</li>
